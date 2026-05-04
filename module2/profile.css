@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #0b1220;
+    color: #e5e7eb;
+
+    /*
+    background-image: linear-gradient(blue, white);
+    background-size: cover;
+    */
+}
+
+main, aside, header, footer {
+    padding: 40px 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    padding: 60px 20px;
+    border-bottom: 1px solid #1f2937;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #111827;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.1);
+}
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    max-width: 800px;
+    background: #111827;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    border: 1px solid #1f2937;
+}
+
+/* TEXT SPACING */
+article p,
+article ul,
+article ol {
+    margin: 15px 0;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 20px 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #38bdf8;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* FIGURE */
+figure {
+    margin-top: 20px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ASIDE */
+aside {
+    background: #0f172a;
+    margin: 40px 20px;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+aside h3 {
+    margin-bottom: 20px;
+}
+
+aside dl dt {
+    margin-top: 10px;
+    color: #38bdf8;
+}
+
+aside a img {
+    margin: 10px 10px 0 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+aside a img:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #111827;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #1f2937;
+}
+
+/* LIGHT MODE (kept but softened for modern UI) */
+@media (prefers-color-scheme: light) {
+    body {
+        background: #f8fafc;
+        color: #1f2937;
+    }
+
+    header, nav, footer, article {
+        background: #ffffff;
+        color: #1f2937;
+    }
+
+    aside {
+        background: #f1f5f9;
+    }
+
+    nav a:hover {
+        color: #2563eb;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+}
