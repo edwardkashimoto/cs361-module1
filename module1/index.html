@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CS361</title>
-</head>
-<body>
-    <h1>CS361 Modules</h1>
+    <meta charset="UTF-8">
+    <title>Module1</title>
 
-    <a href="module1/index.html">Module 1</a><br>
-    <a href="module2/index.html">Module 2</a>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 320px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #5a67d8;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Hello CBU!</h1>
+        <a href="module2/profile.html">View Profile</a>
+    </div>
+
 </body>
 </html>
